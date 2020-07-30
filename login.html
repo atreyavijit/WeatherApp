@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>::Login::</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div id="container">
+			<fieldset>
+				<legend>L O G I N</legend>
+				<div id="login">
+					<form>
+						<label>Email Address</label><br/>
+						<input type="text" name="emailAddress" id="email"></input><br/>
+						<label>Password</label><br/>
+						<input type="password" name="password" id="password"></input><br/><br/>
+					</form>
+					<button id="login" onclick="loginCheck()">Login&rarr;</button><br/><br/>
+				</div>
+				<div class="weather-container">
+					<p id="weatherPTag">Login first to see weather information!</p>
+					<ul id="weather-list"></ul>
+				</div>
+				<div id="message">
+					<p id="today">
+						Today's Message: <span id="messageToday">Login first</span><br/>
+						Today's Date: <span id="dateToday">Login first</span><br/>
+						Time Now: <span id="timeNow">Login First</span><br/>
+					</p>
+					<p id="loginMessage"></p>
+				</div>
+			</fieldset>
+		</div>
+	</body>
+	<script src="js/login.js"></script>
+	<script src="js/jquery.min.js"></script>
+</html>
